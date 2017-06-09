@@ -21,7 +21,7 @@ const accessURL = ({ code, refresh_token }) =>
 
 export default λ(async (event) => {
   try {
-    return await request.post(accessURL(event));
+    return await request.post(accessURL(event)).data;
   } catch (error) {
     return error;
   }
