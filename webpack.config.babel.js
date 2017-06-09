@@ -56,15 +56,6 @@ export default {
       redirect_uri,
       url,
     }),
-    // new webpack.DefinePlugin({
-    //   'process.env': {
-    //     NODE_ENV: JSON.stringify('production'),
-    //     client_secret,
-    //     client_id,
-    //     redirect_uri,
-    //     url,
-    //   },
-    // }),
     new webpack.optimize.UglifyJsPlugin({
       output: { comments: false },
     }),
