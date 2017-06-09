@@ -2,13 +2,6 @@
 import webpack from 'webpack';
 import path from 'path';
 
-const {
-  client_secret,
-  client_id,
-  redirect_uri,
-  url,
-} = process.env;
-
 export default {
   entry: ['./src/index.js'],
   target: 'node',
