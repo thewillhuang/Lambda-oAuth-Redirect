@@ -1,0 +1,14 @@
+{
+  "name": "Procore-Lambda-Auth",
+  "description": "oauth service without sending secrets",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::015847073762:role/Procore-Lambda-Auth_lambda_function",
+  "runtime": "nodejs6.10",
+  "handler": "dist.default",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.babel.js --bail",
+    "clean": "rm -fr dist"
+  },
+  "environment": {}
+}

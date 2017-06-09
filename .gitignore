@@ -1,0 +1,10 @@
+event*.json
+build/
+tmp/
+config*.json
+*.log
+node_modules
+o.zip
+dist
+yarn-error.log
+npm-debug.log
