@@ -50,8 +50,8 @@ export default {
       debug: false,
     }),
     new webpack.EnvironmentPlugin({
-      NODE_ENV: 'production',
       ...process.env,
+      NODE_ENV: 'production',
     }),
     new webpack.optimize.UglifyJsPlugin({
       output: { comments: false },
