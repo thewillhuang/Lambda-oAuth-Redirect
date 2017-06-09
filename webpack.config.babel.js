@@ -51,10 +51,7 @@ export default {
     }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: 'production',
-      client_secret,
-      client_id,
-      redirect_uri,
-      url,
+      ...process.env,
     }),
     new webpack.optimize.UglifyJsPlugin({
       output: { comments: false },
