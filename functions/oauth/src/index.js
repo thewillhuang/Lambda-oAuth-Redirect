@@ -18,8 +18,7 @@ export default λ(async (event) => {
     // returns payload as is back to requesting application
     // return await request.post(accessURL({ code, refresh_token }));
     // return { url: accessURL(), msg: 'testing' };
-    const payload = { ...event, url: accessURL(event) };
-    return payload;
+    return { ...event, url: accessURL(event) };
   } catch (error) {
     return error;
   }

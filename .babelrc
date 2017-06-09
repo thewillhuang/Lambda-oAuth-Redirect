@@ -2,13 +2,8 @@
   "presets": [
     ["env", {
       "targets": {
-        "node": "6.31",
-        "uglify": true
+        "node": true
       }
     }]
-  ],
-  "plugins": [
-    "transform-promise-to-bluebird",
-    "transform-runtime"
   ]
 }

@@ -16,9 +16,22 @@ export default {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        // options: {
-        //   cacheDirectory: true,
-        // },
+        options: {
+          babelrc: false,
+          plugins: [
+            'transform-promise-to-bluebird',
+            'transform-runtime',
+          ],
+          presets: [
+            ['env', {
+              targets: {
+                node: '6.31',
+                uglify: true,
+              },
+            }],
+            'stage-0',
+          ],
+        },
         exclude: /node_modules/,
       },
     ],
