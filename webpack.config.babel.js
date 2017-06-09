@@ -2,6 +2,13 @@
 import webpack from 'webpack';
 import path from 'path';
 
+const {
+  client_secret,
+  client_id,
+  redirect_uri,
+  url,
+} = process.env;
+
 export default {
   entry: ['./src/index.js'],
   target: 'node',
@@ -45,6 +52,10 @@ export default {
     new webpack.DefinePlugin({
       'process.env': {
         NODE_ENV: JSON.stringify('production'),
+        client_secret,
+        client_id,
+        redirect_uri,
+        url,
       },
     }),
     new webpack.optimize.UglifyJsPlugin({
