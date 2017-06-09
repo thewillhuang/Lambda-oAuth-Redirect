@@ -10,7 +10,7 @@ const {
 } = process.env;
 
 const accessURL = ({ code, refresh_token }) =>
-  `${url}/token?${qs.stringify({
+  `${url}?${qs.stringify({
     grant_type: code ? 'authorization_code' : 'refresh_token',
     code,
     refresh_token,
