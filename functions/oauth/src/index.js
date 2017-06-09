@@ -20,14 +20,8 @@ const accessURL = ({ code, refresh_token }) =>
   })}`;
 
 export default λ(async (event) => {
-  // receives AUTHORIZATION_CODE or REFRESH_TOKEN
   try {
-    // requests access_token using client id and secret along with AUTHORIZATION_CODE
-    // returns payload as is back to requesting application
-    // return await request.post(accessURL({ code, refresh_token }));
-    // return { url: accessURL(), msg: 'testing' };
-    console.log(process.env);
-    return { ...event, url: accessURL(event) };
+    return await request.post(accessURL(event));
   } catch (error) {
     return error;
   }
