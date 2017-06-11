@@ -25,7 +25,7 @@ export default {
           presets: [
             ['env', {
               targets: {
-                node: '6.31',
+                node: '6.10.2',
                 uglify: true,
               },
             }],
