@@ -7,7 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "apex.js": "^2.0.0",
-    "aws-sdk": "^2.77.0",
+    "aws-sdk": "^2.80.0",
     "axios": "^0.16.2",
     "query-string": "^4.3.4",
     "ramda": "^0.24.1",
@@ -16,7 +16,7 @@
   "devDependencies": {
     "babel-core": "^6.25.0",
     "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.0",
+    "babel-loader": "^7.1.1",
     "babel-plugin-transform-promise-to-bluebird": "^1.1.1",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.5.2",
